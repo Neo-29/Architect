@@ -137,3 +137,14 @@ ERROR="Error"
 INSTALL_FAILED="${package} installation failed"
 PACKAGES_INSTALL="Installation of packages"
 PACKAGES_UNINSTALL="Uninstallation of packages"
+
+# src/end.sh
+
+DONE_IN="Done in"
+SECONDS="seconds"
+USE_PASTEBIN="Do you want to upload the log file to a pastebin?"
+UPLOADING_PASTEBIN="Uploading log file to pastebin"
+UPLOADED="Log file uploaded to"
+FINISHED="The script is finished, the system must restart"
+TO_RESTART="to restart"
+RESTARTING_IN="Restarting in"

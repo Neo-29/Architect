@@ -137,3 +137,14 @@ ERROR="Erreur"
 INSTALL_FAILED="L'installation de ${package} a échoué"
 PACKAGES_INSTALL="Installation de paquets"
 PACKAGES_UNINSTALL="Désinstallation de paquets"
+
+# src/end.sh
+
+DONE_IN="Effectué en"
+SECONDS="secondes"
+USE_PASTEBIN="Voulez-vous téléverser le fichier de log vers pastebin?"
+UPLOADING_PASTEBIN="Téléversement du fichier de log vers pastebin"
+UPLOADED="Le fichier de log a été téléversé à l'URL"
+FINISHED="Le script est terminé, le système doit redémarrer"
+TO_RESTART="pour redémarrer"
+RESTARTING_IN="Redémarrage dans"

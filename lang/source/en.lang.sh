@@ -70,3 +70,6 @@ SETTING_TO="to"
 # src/system/other.sh
 
 SOUND_SERVER_CLEANING="Cleaning old sound server dependencies"
+GRUB_CHECKING="Checking if GRUB is installed"
+CREATING_HOOKS="Creating /etc/pacman.d/hooks/"
+COPYING_HOOK="Copying grub.hook to /etc/pacman.d/hooks/"

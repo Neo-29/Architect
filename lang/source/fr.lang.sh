@@ -70,3 +70,6 @@ SETTING_TO="sur"
 # src/system/other.sh
 
 SOUND_SERVER_CLEANING="Nettoyage des anciennes dépendances du serveur son"
+GRUB_CHECKING="Vérification de l'installation de GRUB"
+CREATING_HOOKS="Création de /etc/pacman.d/hooks/"
+COPYING_HOOK="Copie de grub.hook vers /etc/pacman.d/hooks/"

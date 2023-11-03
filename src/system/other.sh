@@ -25,13 +25,13 @@ function sound_server() {
 }
 
 function setup_system_loaders() {
-    log_msg "Checking if GRUB is installed"
+    log_msg "${GRUB_CHECKING}"
     if [[ $BOOT_LOADER != "grub" ]]; then
         return
     fi
 
-    exec_log "sudo mkdir -p '/etc/pacman.d/hooks/'" "Creating /etc/pacman.d/hooks/"
-    exec_log "sudo cp 'assets/data/grub.hook' '/etc/pacman.d/hooks/'" "Copying grub.hook to /etc/pacman.d/hooks/"
+    exec_log "sudo mkdir -p '/etc/pacman.d/hooks/'" "${CREATING_HOOKS}"
+    exec_log "sudo cp 'assets/data/grub.hook' '/etc/pacman.d/hooks/'" "${COPYING_HOOK}"
     install_one "update-grub"
 }
 

@@ -43,3 +43,12 @@ DE_DETECTION="Détection de l'environnement de bureau"
 SOFTWARE_INST="Installation de logiciels"
 
 FLATPAK_SUPPORT_INST="Installation du support des Flatpaks"
+
+# src/system/config/pacman.sh
+
+ENABLING_COLOR="Activation de la couleur dans pacman"
+ENABLING_VERBOSE="Activation des listes de paquets complètes dans pacman"
+ENABLING_PARALLEL="Activation des téléchargements en parallèle dans pacman"
+ENABLING_MULTILIB="Activation du dépôt multilib"
+UPDATING_MIRRORS="mise à jour de la liste des miroirs"
+UPDATING_DATABASE="mise à jour de la base de données de pacman"

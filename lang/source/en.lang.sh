@@ -43,3 +43,12 @@ DE_DETECTION="Desktop environment detection"
 SOFTWARE_INST="Software installation"
 
 FLATPAK_SUPPORT_INST="Flatpak support installation"
+
+# src/system/config/pacman.sh
+
+ENABLING_COLOR="Enabling color in pacman"
+ENABLING_VERBOSE="Enabling verbose package lists in pacman"
+ENABLING_PARALLEL="Enabling parallel downloads in pacman"
+ENABLING_MULTILIB="Enabling multilib repository"
+UPDATING_MIRRORS="updating mirrorlist"
+UPDATING_DATABASE="updating pacman database"

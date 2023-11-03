@@ -82,3 +82,18 @@ CHANGING_DEFAULT_SHELL="Setting default shell to"
 # src/system/drivers/gpu.sh
 
 GRAPHICS_CARD_CHOICE="What is your graphics card type ?"
+
+# src/system/drivers/devices.sh
+
+GAMEPAD_XBOX="Do you want to use Xbox 360, Series X|S|Elite or 8BitDo controllers ?"
+YES="Y"
+YES_MIN="y"
+GAMEPAD_PS="Do you want to use PS4 or PS5 controllers ?"
+USE_PRINTER="Do you want to use a printer ?"
+USE_EPSON_PRINTER="Do you want to use a EPSON printer ?"
+USE_HP_PRINTER="Do you want to use a HP printer ?"
+ENABLING_AVAHI="enabling avahi-daemon service"
+ENABLING_CUPS="enabling cups service"
+USE_BLUETOOTH="Do you want to use Bluetooth ?"
+CHECK_BLUEZ="checking if bluez-utils-compat is installed"
+ENABLING_BLUETOOTH="enabling bluetooth service"

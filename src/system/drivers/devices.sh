@@ -1,27 +1,27 @@
 source src/cmd.sh
 
 function gamepad() {
-    read -rp "Do you want to use Xbox 360, Series X|S|Elite or 8BitDo controllers ? (y/N) : " choice
+    read -rp "${GAMEPAD_XBOX} (${YES_MIN}/N) : " choice
     choice="${choice^^}"
 
-    if [[ $choice == "Y" ]]; then
+    if [[ $choice == "${YES}" ]]; then
         install_one "xpadneo-dkms"
     fi
 
-    read -rp "Do you want to use PS4 or PS5 controllers ? (y/N) : " choice
+    read -rp "${GAMEPAD_PS} (${YES_MIN}/N) : " choice
     choice="${choice^^}"
 
-    if [[ $choice == "Y" ]]; then
+    if [[ $choice == "${YES}" ]]; then
         uninstall_one "bluez-utils"
         install_lst "ds4drv dualsensectl"
     fi
 }
 
 function printer() {
-    read -rp "Do you want to use a printer ? (y/N) : " choice
+    read -rp "${USE_PRINTER} (${YES_MIN}/N) : " choice
     choice="${choice^^}"
 
-    if [[ $choice == "Y" ]]; then
+    if [[ $choice == "${YES}" ]]; then
         local inlst="
             ghostscript
             gsfonts
@@ -38,10 +38,10 @@ function printer() {
             gutenprint
             foomatic-db-gutenprint-ppds
         "
-        read -rp "Do you want to use a EPSON printer ? (y/N) : " choice
+        read -rp "${USE_EPSON_PRINTER} (${YES_MIN}/N) : " choice
         choice="${choice^^}"
 
-        if [[ $choice == "Y" ]]; then
+        if [[ $choice == "${YES}" ]]; then
             inlst+="
                 epson-inkjet-printer-escpr
                 epson-inkjet-printer-escpr2
@@ -49,10 +49,10 @@ function printer() {
                 epson-inkjet-printer-n10-nx127
             "
         fi
-        read -rp "Do you want to use a HP printer ? (y/N) : " choice
+        read -rp "${USE_HP_PRINTER} (${YES_MIN}/N) : " choice
         choice="${choice^^}"
 
-        if [[ $choice == "Y" ]]; then
+        if [[ $choice == "${YES}" ]]; then
             inlst+="
                 hplip
                 python-pyqt5
@@ -61,16 +61,16 @@ function printer() {
 
         install_lst "${inlst}"
 
-        exec_log "sudo systemctl enable --now avahi-daemon" "enabling avahi-daemon service"
-        exec_log "sudo systemctl enable --now cups" "enabling cups service"
+        exec_log "sudo systemctl enable --now avahi-daemon" "e${ENABLING_AVAHI}"
+        exec_log "sudo systemctl enable --now cups" "${ENABLING_CUPS}"
     fi
 }
 
 function bluetooth() {
-    read -rp "Do you want to use bluetooth ? (y/N) : " choice
+    read -rp "${USE_BLUETOOTH} (${YES_MIN}/N) : " choice
     choice="${choice^^}"
 
-    if [[ $choice == "Y" ]]; then
+    if [[ $choice == "${YES}" ]]; then
         local -r inlst="
             bluez
             bluez-plugins
@@ -78,11 +78,11 @@ function bluetooth() {
 
         install_lst "${inlst}"
 
-        exec_log "pacman -Qi bluez-utils-compat" "checking if bluez-utils-compat is installed"
+        exec_log "pacman -Qi bluez-utils-compat" "${CHECK_BLUEZ}"
         if [[ $? -eq 1 ]]; then
             install_one "bluez-utils"
         fi
 
-        exec_log "sudo systemctl enable --now bluetooth" "enabling bluetooth service"
+        exec_log "sudo systemctl enable --now bluetooth" "${ENABLING_BLUETOOTH}"
     fi
 }

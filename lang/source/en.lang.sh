@@ -73,3 +73,8 @@ SOUND_SERVER_CLEANING="Cleaning old sound server dependencies"
 GRUB_CHECKING="Checking if GRUB is installed"
 CREATING_HOOKS="Creating /etc/pacman.d/hooks/"
 COPYING_HOOK="Copying grub.hook to /etc/pacman.d/hooks/"
+
+# src/system/shell.sh
+
+SHELL_CHOICE="What would you like to be your default shell ?"
+CHANGING_DEFAULT_SHELL="Setting default shell to"

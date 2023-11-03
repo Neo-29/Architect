@@ -128,3 +128,12 @@ ADD_FLATHUB="add flathub repository"
 # src/software/install.sh
 
 ASK_INSTALL="Do you want to install"
+
+# src/cmd.sh
+
+MIGHT_BE_LONG="might be long"
+EXIT_STATUS="Exit status"
+ERROR="Error"
+INSTALL_FAILED="${package} installation failed"
+PACKAGES_INSTALL="Installation of packages"
+PACKAGES_UNINSTALL="Uninstallation of packages"

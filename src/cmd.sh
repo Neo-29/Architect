@@ -45,7 +45,7 @@ function install_one() {
 
     local warning_msg=""
     if [[ ${warning} =~ ${package} ]]; then
-        warning_msg=" ${RED}might be long${RESET}"
+        warning_msg=" ${RED}${MIGHT_BE_LONG}${RESET}"
     fi
 
     log_msg "${BLUE}::${RESET} [+] ${package}${warning_msg}"
@@ -57,9 +57,9 @@ function install_one() {
 
     local exit_status=$?
 
-    echo "[INFO]: Exit status: ${exit_status}" >>"${LOG_FILE}"
+    echo "[INFO]: ${EXIT_STATUS}: ${exit_status}" >>"${LOG_FILE}"
     if [[ ${exit_status} -ne 0 ]]; then
-        echo -e "${RED}Error: ${package} installation failed${RESET}"
+        echo -e "${RED}${ERROR}: ${INSTALL_FAILED}${RESET}"
     fi
 }
 
@@ -75,7 +75,7 @@ function install_lst() {
     local -r type=$2
     local -r lst_split=(${lst// / })
 
-    echo -e "${BLUE}::---- Installation of packages ----::${RESET}"
+    echo -e "${BLUE}::---- ${PACKAGES_INSTALL} ----::${RESET}"
     for package in ${lst_split[@]}; do
         install_one "${package}" "${type}"
     done
@@ -86,7 +86,7 @@ function uninstall_lst() {
     local -r lst_split=(${lst// / })
 
     log_msg "$2"
-    echo -e "${BLUE}::--- Uninstallation of packages ---::${RESET}"
+    echo -e "${BLUE}::--- ${PACKAGES_UNINSTALL} ---::${RESET}"
     for package in ${lst_split[@]}; do
         uninstall_one "${package}"
     done

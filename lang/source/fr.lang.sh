@@ -128,3 +128,12 @@ ADD_FLATHUB="dépôt flathub ajouté"
 # src/software/install.sh
 
 ASK_INSTALL="Voulez-vous installer"
+
+# src/cmd.sh
+
+MIGHT_BE_LONG="peut être long"
+EXIT_STATUS="Statut de sortie"
+ERROR="Erreur"
+INSTALL_FAILED="L'installation de ${package} a échoué"
+PACKAGES_INSTALL="Installation de paquets"
+PACKAGES_UNINSTALL="Désinstallation de paquets"

@@ -112,3 +112,11 @@ NVIDIA_ALL_WARNING="caution: if you choose nvidia-all, you'll need to know how t
 NVIDIA_ALL_CLONING="cloning of nvidia-all repository"
 NVIDIA_ALL_REMOVAL="removal of nvidia-all repository"
 ENABLING_NVIDIA="activation of nvidia-{hibernate,resume,suspend}"
+
+# DE Translations
+
+ASK_DE="What is your desktop environment ?"
+
+SETTING_ADW_GTK3="Setting gtk theme to adw-gtk3"
+ENABLING_NUMLOCK="Enabling numlock on startup"
+UPDATING_USER_DIRS="Updating user directories"

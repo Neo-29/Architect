@@ -36,6 +36,6 @@ function install_gnome() {
     "
 
     install_lst "${inlst}"
-    exec_log "gsettings set org.gnome.desktop.interface gtk-theme adw-gtk3" "Setting gtk theme to adw-gtk3"
-    exec_log "gsettings set org.gnome.desktop.peripherals.keyboard numlock-state true" "Enabling numlock on startup"
+    exec_log "gsettings set org.gnome.desktop.interface gtk-theme adw-gtk3" "${SETTING_ADW_GTK3}"
+    exec_log "gsettings set org.gnome.desktop.peripherals.keyboard numlock-state true" "${ENABLING_NUMLOCK}"
 }

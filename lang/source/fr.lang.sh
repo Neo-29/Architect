@@ -112,3 +112,11 @@ NVIDIA_ALL_WARNING="attention: si vous choisissez nvidia-all, vous devrez savoir
 NVIDIA_ALL_CLONING="clonage du dépôt nvidia-all"
 NVIDIA_ALL_REMOVAL="suppression du dépôt nvidia-all"
 ENABLING_NVIDIA="activation de nvidia-{hibernate,resume,suspend}"
+
+# DE Translations
+
+ASK_DE="Quel est votre environnement de bureau ?"
+
+SETTING_ADW_GTK3="Changement du thème GTK en adw-gtk3"
+ENABLING_NUMLOCK="Activation du verrouillage numérique au démarrage"
+UPDATING_USER_DIRS="Mise à jour des dossiers de l'utilisateur"

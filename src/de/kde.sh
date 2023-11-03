@@ -22,5 +22,5 @@ function install_kde() {
     "
 
     install_lst "${inlst}"
-    exec_log "sudo echo "Numlock=on" >> /etc/sddm.conf" "Enabling numlock on startup"
+    exec_log "sudo echo "Numlock=on" >> /etc/sddm.conf" "${ENABLING_NUMLOCK}"
 }

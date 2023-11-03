@@ -66,3 +66,7 @@ CONFIG_OF="configuration de"
 
 SETTING="Réglage de"
 SETTING_TO="sur"
+
+# src/system/other.sh
+
+SOUND_SERVER_CLEANING="Nettoyage des anciennes dépendances du serveur son"

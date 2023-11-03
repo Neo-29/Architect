@@ -20,7 +20,7 @@ function sound_server() {
         alsa-tools
     "
 
-    uninstall_lst "${unlst}" "Clean old sound server dependencies"
+    uninstall_lst "${unlst}" "${SOUND_SERVER_CLEANING}"
     install_lst "${inlst}"
 }
 

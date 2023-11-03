@@ -97,3 +97,18 @@ ENABLING_CUPS="enabling cups service"
 USE_BLUETOOTH="Do you want to use Bluetooth ?"
 CHECK_BLUEZ="checking if bluez-utils-compat is installed"
 ENABLING_BLUETOOTH="enabling bluetooth service"
+
+# src/system/drivers/nvidia.sh
+
+HOOK_FOLDER_CREATION="Hook folder creation"
+HOOK_FILE_COPY="Hook file copy"
+MKINITCPIO_CONF="mkinitcpio configuration"
+GRUB_CONF="grub configuration"
+GRUB_UPDATE="GRUB update"
+SYSTEMD_BOOT_CONF="systemd-boot configuration"
+NVIDIA_DEPS_CLEANING="Cleaning old nvidia drivers dependencies"
+USE_NVIDIA_ALL="Do you want to use NVIDIA-ALL"
+NVIDIA_ALL_WARNING="caution: if you choose nvidia-all, you'll need to know how to maintain it."
+NVIDIA_ALL_CLONING="cloning of nvidia-all repository"
+NVIDIA_ALL_REMOVAL="removal of nvidia-all repository"
+ENABLING_NVIDIA="activation of nvidia-{hibernate,resume,suspend}"

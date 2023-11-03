@@ -120,3 +120,7 @@ ASK_DE="What is your desktop environment ?"
 SETTING_ADW_GTK3="Setting gtk theme to adw-gtk3"
 ENABLING_NUMLOCK="Enabling numlock on startup"
 UPDATING_USER_DIRS="Updating user directories"
+
+# src/software/flatpak.sh
+
+ADD_FLATHUB="add flathub repository"

@@ -5,8 +5,8 @@ function ask_to_add() {
     local -r package=$2
     local answer
 
-    read -rp "Do you want to install ${name} ? (y/N) " answer
-    if [[ ${answer} =~ ^[Yy]$ ]]; then
+    read -rp "${ASK_INSTALL} ${name} ? (${YES_MIN}/N) " answer
+    if [[ "${answer^^}" == "${YES}" ]]; then
         echo ${package}
     fi
 }

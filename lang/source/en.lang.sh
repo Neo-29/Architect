@@ -124,3 +124,7 @@ UPDATING_USER_DIRS="Updating user directories"
 # src/software/flatpak.sh
 
 ADD_FLATHUB="add flathub repository"
+
+# src/software/install.sh
+
+ASK_INSTALL="Do you want to install"

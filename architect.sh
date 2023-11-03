@@ -9,9 +9,9 @@ export BLUE=$(tput setaf 4)
 export PURPLE=$(tput setaf 5)
 # ================================================================================================ #
 if sudo -v; then
-    echo -e "\n${GREEN}Root privileges granted${RESET}"
+    echo -e "\n${GREEN}${ROOT_PRIVILEGES_GRANTED}${RESET}"
 else
-    echo -e "\n${RED}Root privileges denied${RESET}"
+    echo -e "\n${RED}${ROOT_PRIVILEGES_DENIED}${RESET}"
     exit 1
 fi
 # ================================================================================================ #
@@ -79,37 +79,38 @@ function little_step() {
 function main() {
     local -r start_time="$(date +%s)"
     # init
-    print_center "Initialization" "${GREEN}"
+    print_center "${INITIALIZATION}" "${GREEN}"
     init_log
+    language_conf
     header
 
     # system
-    print_center "System preparation" "${GREEN}"
-    little_step config_pacman           "Pacman configuration"
-    little_step install_aur             "AUR helper installation"
-    little_step mirrorlist              "Mirrorlist configuration"
-    little_step install_headers         "Kernel headers installation"
-    little_step max_map_count           "Max map count configuration"
-    little_step sound_server            "Sound server configuration"
-    little_step setup_system_loaders    "System loaders configuration"
-    little_step usefull_package         "Usefull package installation"
-    little_step shell_config            "Shell configuration"
+    print_center "${SYSTEM_PREP}" "${GREEN}"
+    little_step config_pacman           "${PACMAN_CONF}"
+    little_step install_aur             "${AUR_HELPER_INST}"
+    little_step mirrorlist              "${MIRRORLIST_CONF}"
+    little_step install_headers         "${KERNEL_HEADERS_INST}"
+    little_step max_map_count           "${MAX_MAP_COUNT_CONF}"
+    little_step sound_server            "${SOUND_SERVER_CONF}"
+    little_step setup_system_loaders    "${BOOTLOADERS_CONF}"
+    little_step usefull_package         "${USEFUL_PACKAGES_INST}"
+    little_step shell_config            "${SHELL_CONF}"
 
     # drivers
-    print_center "System configuration" "${GREEN}"
-    little_step video_drivers           "Video drivers installation"
-    little_step gamepad                 "Gamepad configuration"
-    little_step printer                 "Printer configuration"
-    little_step bluetooth               "Bluetooth configuration"
+    print_center "${SYSTEM_CONF}" "${GREEN}"
+    little_step video_drivers           "${VIDEO_DRIVERS_INST}"
+    little_step gamepad                 "${GAMEPAD_CONF}"
+    little_step printer                 "${PRINTER_CONF}"
+    little_step bluetooth               "${BLUETOOTH_CONF}"
 
     # desktop environment
-    print_center "Environment configuration" "${GREEN}"
-    little_step detect_de               "Desktop environment detection"
+    print_center "${DE_CONF}" "${GREEN}"
+    little_step detect_de               "${DE_DETECTION}"
 
     # software
-    print_center "Software installation" "${GREEN}"
-    little_step support_flatpak         "Flatpak support installation"
-    little_step install_software        "Software installation"
+    print_center "${SOFTWARE_INST}" "${GREEN}"
+    little_step support_flatpak         "${FLATPAK_SUPPORT_INST}"
+    little_step install_software        "${SOFTWARE_INST}"
 
     # end
     endscript "${start_time}"

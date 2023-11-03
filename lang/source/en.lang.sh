@@ -10,3 +10,36 @@ ENTER="Enter"
 TO_CONTINUE="to continue"
 OR="or"
 TO_CANCEL="to cancel"
+
+# architect.sh
+
+ROOT_PRIVILEGES_GRANTED="Root privileges granted"
+ROOT_PRIVILEGES_DENIED="Root privileges denied"
+
+INITIALIZATION="Initialization"
+
+SYSTEM_PREP="System preparation"
+PACMAN_CONF="Pacman configuration"
+AUR_HELPER_INST="AUR helper installation"
+MIRRORLIST_CONF="Mirrorlist configuration"
+KERNEL_HEADERS_INST="Kernel headers installation"
+MAX_MAP_COUNT_CONF="'Max map count' configuration"
+SOUND_SERVER_CONF="Sound server configuration"
+BOOTLOADERS_CONF="Bootloaders configuration"
+USEFUL_PACKAGES_INST="Useful packages installation"
+SHELL_CONF="Shell configuration"
+
+SYSTEM_CONF="System configuration"
+
+VIDEO_DRIVERS_INST="Video drivers installation"
+GAMEPAD_CONF="Gamepad configuration"
+PRINTER_CONF="Printer configuration"
+BLUETOOTH_CONF="Bluetooth configuration"
+
+DE_CONF="Desktop environment configuration"
+
+DE_DETECTION="Desktop environment detection"
+
+SOFTWARE_INST="Software installation"
+
+FLATPAK_SUPPORT_INST="Flatpak support installation"

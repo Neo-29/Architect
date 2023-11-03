@@ -61,3 +61,8 @@ CLONING="Cloning of"
 INSTALLATION="Installation of"
 DIR_DELETION="Directory deletion"
 CONFIG_OF="configuration of"
+
+# src/system/kernel.sh
+
+SETTING="Setting"
+SETTING_TO="to"

@@ -52,3 +52,12 @@ ENABLING_PARALLEL="Enabling parallel downloads in pacman"
 ENABLING_MULTILIB="Enabling multilib repository"
 UPDATING_MIRRORS="updating mirrorlist"
 UPDATING_DATABASE="updating pacman database"
+
+# src/system/config/aur.sh
+
+AUR_CHOICE="What aur helper do you want to install ?"
+YOU_CHOSE="You chose"
+CLONING="Cloning of"
+INSTALLATION="Installation of"
+DIR_DELETION="Directory deletion"
+CONFIG_OF="configuration of"

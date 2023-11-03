@@ -52,3 +52,12 @@ ENABLING_PARALLEL="Activation des téléchargements en parallèle dans pacman"
 ENABLING_MULTILIB="Activation du dépôt multilib"
 UPDATING_MIRRORS="mise à jour de la liste des miroirs"
 UPDATING_DATABASE="mise à jour de la base de données de pacman"
+
+# src/system/config/aur.sh
+
+AUR_CHOICE="Quel assistant AUR souhaitez-vous installer ?"
+YOU_CHOSE="Vous avez choisi"
+CLONING="Clonage de"
+INSTALLATION="Installation de"
+DIR_DELETION="Suppression du répertoire"
+CONFIG_OF="configuration de"

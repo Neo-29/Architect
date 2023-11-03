@@ -78,3 +78,7 @@ COPYING_HOOK="Copying grub.hook to /etc/pacman.d/hooks/"
 
 SHELL_CHOICE="What would you like to be your default shell ?"
 CHANGING_DEFAULT_SHELL="Setting default shell to"
+
+# src/system/drivers/gpu.sh
+
+GRAPHICS_CARD_CHOICE="What is your graphics card type ?"
